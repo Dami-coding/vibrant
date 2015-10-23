@@ -1,0 +1,415 @@
+/*GENERAL*/
+
+
+.design:hover {
+  position: relative;
+}
+.design:hover:after {
+  content: url(http://www.abc.org.uk/Global/Content%20Images/Vibrant-Media-PR.png); /* no need for qoutes */
+  display: block;
+  position: absolute;
+  left: 13px; /* change this value to one that suits you */
+  top: 6px; /* change this value to one that suits you */
+}
+
+
+.absolut{
+  width: 40;
+  height: 20;
+}
+.absolut:hover {
+  position: relative;
+
+}
+.absolut:hover{
+  content: url(http://www.drinksmart.com/galleries/default-image/beamtradead_R6_web.png); /* no need for qoutes */
+  display: block;
+  position: absolute;
+  left: 13px; /* change this value to one that suits you */
+  top: 6px; /* change this value to one that suits you */
+}
+
+
+.xbox{
+  margin: -3px;
+}
+
+.xboxpage{
+  display: block;
+  background-color: #00A700;
+  width: 100%;
+  height: 100vh;
+}
+
+.xboxone{
+  margin: 130px auto -5px 30px;
+}
+
+#logo{
+  margin: -7px;
+}
+
+.pic{
+  width: 100%;
+}
+
+
+@import url('normalize.css');
+
+/* General Demo Style */
+body{
+  -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.ch-grid {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+  content: '';
+  display: table;
+}
+
+.ch-grid:after {
+  clear: both;
+}
+
+.ch-grid li {
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  margin: 20px;
+}
+.ch-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  cursor: default;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.ch-thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: inset 0 0 0 15px rgba(255,255,255, 0.5);
+
+  -webkit-transform-origin: 95% 40%;
+  -moz-transform-origin: 95% 40%;
+  -o-transform-origin: 95% 40%;
+  -ms-transform-origin: 95% 40%;
+  transform-origin: 95% 40%;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.ch-thumb:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-radius: 50%;
+  top: 40%;
+  left: 95%;
+  margin: -4px 0 0 -4px;
+  background: rgb(14,14,14);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(14,14,14,1) 0%, rgba(125,126,125,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(14,14,14,1)), color-stop(100%,rgba(125,126,125,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+  box-shadow: 0 0 1px rgba(255,255,255,0.9);
+}
+
+.ch-img-1 { 
+  background: #878ff7;
+  z-index: 12;
+}
+
+.ch-img-2 { 
+  background:#0f8882;
+  z-index: 11;
+}
+
+.ch-img-3 { 
+  background:#da853c;
+  z-index: 10;
+}
+
+.ch-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #c9512e url(../images/noise.png);
+  box-shadow: inset 0 0 0 5px rgba(0,0,0,0.05);
+}
+
+
+
+
+.ch-info p a {
+  display: block;
+  color: #333;
+  width: 80px;
+  height: 80px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding-top: 24px;
+  margin: 7px auto 0;
+  opacity: 0;
+
+  -webkit-transition: 
+  -webkit-transform 0.3s ease-in-out 0.2s,
+  opacity 0.3s ease-in-out 0.2s,
+  background 0.2s linear 0s;
+  -moz-transition: 
+  -moz-transform 0.3s ease-in-out 0.2s,
+  opacity 0.3s ease-in-out 0.2s,
+  background 0.2s linear 0s;
+  -o-transition: 
+  -o-transform 0.3s ease-in-out 0.2s,
+  opacity 0.3s ease-in-out 0.2s,
+  background 0.2s linear 0s;
+  -ms-transition: 
+  -ms-transform 0.3s ease-in-out 0.2s,
+  opacity 0.3s ease-in-out 0.2s,
+  background 0.2s linear 0s;
+  transition: 
+  transform 0.3s ease-in-out 0.2s,
+  opacity 0.3s ease-in-out 0.2s,
+  background 0.2s linear 0s;
+
+  -webkit-transform: translateX(60px) rotate(90deg);
+  -moz-transform: translateX(60px) rotate(90deg);
+  -o-transform: translateX(60px) rotate(90deg);
+  -ms-transform: translateX(60px) rotate(90deg);
+  transform: translateX(60px) rotate(90deg);
+
+  -webkit-backface-visibility: hidden;
+}
+
+
+.ch-item:hover .ch-thumb {
+  box-shadow: inset 0 0 0 15px rgba(255,255,255, 0.5), 0 1px 3px rgba(0,0,0,0.2);
+  -webkit-transform: rotate(-110deg);
+  -moz-transform: rotate(-110deg);
+  -o-transform: rotate(-110deg);
+  -ms-transform: rotate(-110deg);
+  transform: rotate(-110deg);
+}
+.ch-item:hover .ch-info p a{
+  opacity: 1;
+  -webkit-transform: translateX(0px) rotate(0deg);
+  -moz-transform: translateX(0px) rotate(0deg);
+  -o-transform: translateX(0px) rotate(0deg);
+  -ms-transform: translateX(0px) rotate(0deg);
+  transform: translateX(0px) rotate(0deg);
+}
+
+
+
+
+
+
+
+
+/*effect 2*/
+.overlay2 {
+  position: absolute;
+  width: 560px;
+  height: 315px;
+  bottom: 0;
+  left: 40;
+  transform: scale(0);
+  background-color: cyan;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.coke:hover .overlay2 {
+  transform: scale(1)
+}
+
+
+
+
+
+
+
+
+    /*BRAND2*/
+
+    .html{
+      width: vh;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      cursor: none;
+    }
+
+    .overlay{
+      background-color: rgba(255,255,255,0.4);
+      height: 100%;
+      border-radius: 50%;
+    }
+
+
+    .circle{
+      width: 500px;
+      height: 500px;
+      position: relative;
+      background-image: url(http://img01.thedrum.com/s3fs-public/drum_basic_article/93147/main_images/BBC8.jpg);
+      background-attachment: fixed;
+      background-position: bottom;
+      background-size: cover;
+      border-radius: 50%;
+    }
+
+    .circle.full{
+      width: 1000%;
+      height: 1000%;
+      transition: 250ms ease all;
+    }
+
+
+
+
+
+    /*NIKE*/
+
+    .service{
+      background-image: url(http://7-themes.com/data_images/out/38/6900915-nike-wallpaper-hd.jpg);
+      height: 100vh;}
+    .container{
+      margin:50px auto;
+      width:700px;
+      height:500px;
+      overflow:hidden;
+      border:10px solid;
+      border-top-color:#856036;
+      border-left-color:#5d4426;
+      border-bottom-color:#856036;
+      border-right-color:#5d4426;
+      position:relative;
+
+    }
+    .photo{
+      position:absolute;
+      animation:round 16s infinite;
+      opacity:0;
+      width:700px;
+      height:500px;
+
+    }
+    @keyframes round{   
+      25%{opacity:1;}
+      40%{opacity:0;}
+    } 
+
+    img:nth-child(4){animation-delay:0s;}
+    img:nth-child(3){animation-delay:4s;}
+    img:nth-child(2){animation-delay:8s;}
+    img:nth-child(1){animation-delay:12s;}
+
+
+
+
+
+
+
+    #slider {
+      position: relative;
+      overflow: hidden;
+      margin: -331px 72px -8px auto;
+      border-radius: 4px;
+    }
+
+    #slider ul {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      height: 200px;
+      list-style: none;
+    }
+
+    #slider ul li {
+      position: relative;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 500px;
+      height: 300px;
+      background: #ccc;
+      text-align: center;
+      line-height: 300px;
+    }
+
+    a.control_prev, a.control_next {
+      position: absolute;
+      top: 40%;
+      z-index: 999;
+      display: block;
+      padding: 4% 3%;
+      width: auto;
+      height: auto;
+      background: #2a2a2a;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    a.control_prev:hover, a.control_next:hover {
+      opacity: 1;
+      -webkit-transition: all 0.2s ease;
+    }
+
+    a.control_prev {
+      border-radius: 0 2px 2px 0;
+    }
+
+    a.control_next {
+      right: 0;
+      border-radius: 2px 0 0 2px;
+    }
+
+    .slider_option {
+      position: relative;
+      margin: 10px auto;
+      width: 160px;
+      font-size: 18px;
+    }
+
+
+
+
